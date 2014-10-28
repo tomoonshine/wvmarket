@@ -1,0 +1,83 @@
+.demo-button {
+    /*	display: inline-block;*/
+    position: relative;
+    display: block;
+    float: right;
+    width: 148px;
+    height: 49px;
+    background-image: url('/images/menu.png');
+    background-repeat: no-repeat;
+    background-position: -811px 0px;
+    cursor: pointer;
+}
+
+.demo-button:hover {
+    background-position: -811px -49px;
+}
+
+.demo-button a {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-indent: -5000px;
+}
+
+.demo-form {
+    border: 1px solid #a0a0a0;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 10px;
+}
+
+.demo-block {
+    width: 170px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.demo-field-hint {
+    font-size: 9pt;
+    color: darkgray;
+}
+
+.demo-block input {
+    width: 170px;
+/*     height: 32px;
+    border: 1px solid #a0a0a0;
+    border-radius: 6px;
+
+    line-height: 22px;
+    vertical-align: middle; */
+}
+
+.run-demo-button {
+    color: white;
+    background-color: #3F6715;
+    border: 1px solid #3F6715;
+
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -webkit-box-shadow: 0px 0px 6px #3f6715;
+    -moz-box-shadow: 0px 0px 6px #3f6715;
+    box-shadow: 0px 0px 6px #3f6715;
+
+    background-image: url('../images/arrow_right_green.png');
+    background-position: 120px center;
+    background-repeat: no-repeat;
+    height: 32px;
+    padding-left: 14px;
+    text-align: left;
+    line-height: 30px;
+    vertical-align: middle;
+    width: 150px;
+
+    cursor: pointer;
+}
+

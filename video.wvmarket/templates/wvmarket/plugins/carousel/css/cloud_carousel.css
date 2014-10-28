@@ -1,0 +1,217 @@
+.carousel_cloud_left_but, .carousel_cloud_right_but {
+    background: url(../img/btns.png) 0 0 no-repeat;
+    border: none;
+    overflow: hidden;
+    text-indent: -999px;
+}
+
+
+.carousel_cloud_left_but, .carousel_cloud_right_but {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -23px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.carousel_cloud_left_but {
+    left: 35px;
+}
+
+.carousel_cloud_right_but {
+    right: 35px;
+    background-position: -46px 0;
+}
+
+.carousel_cloud_left_but:hover {
+    background-position: 0 -46px;
+}
+
+.carousel_cloud_right_but:hover {
+    background-position: -46px -46px;
+}
+
+
+
+.carousel_cloud {
+    position: relative;
+    width: 770px;
+    margin: auto;
+    min-height: 210px;
+    height: auto !important;
+    height: 210px;
+    overflow: hidden;
+    text-align: center;
+}
+
+    .carousel_cloud a {
+        padding: 10px;
+    }
+        /*
+.carousel_cloud a { border-top:1px solid #e1e1e1; border-left:1px solid #aaa; border-bottom:1px solid #aaa; border-right:1px solid #e1e1e1; border-radius:10px; box-shadow:-5px 5px 10px #ccc; padding:5px; background:#fff; }
+*/
+        .carousel_cloud a img {
+            width: 100%;
+        }
+
+
+        .carousel_cloud a img {
+            visibility: hidden;
+        }
+
+    .carousel_cloud .logo_4 img, .carousel_cloud .logo_5 img, .carousel_cloud .logo_6 img, .carousel_cloud .logo_7 img,
+    .carousel_cloud .logo_8 img {
+        visibility: visible;
+    }
+
+
+    .carousel_cloud a {
+        position: absolute;
+        left: 712px;
+        top: 0;
+        width: 120px;
+        height: 80px;
+        z-index: 0;
+        visibility: hidden;
+        background: url(../img/box.png) 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+        .carousel_cloud a.logo_0 {
+            left: 112px;
+            visibility: visible;
+        }
+
+
+        .carousel_cloud a.logo_1 {
+            left: 50px;
+            top: 12px;
+            z-index: 1;
+            visibility: visible;
+        }
+
+        .carousel_cloud a.logo_2 {
+            left: 0;
+            top: 24px;
+            width: 130px;
+            height: 83px;
+            z-index: 2;
+            visibility: visible;
+        }
+
+        .carousel_cloud a.logo_3 {
+            left: 23px;
+            top: 40px;
+            width: 130px;
+            height: 85px;
+            z-index: 3;
+            visibility: visible;
+        }
+
+        .carousel_cloud a.logo_4 {
+            left: 70px;
+            top: 60px;
+            width: 135px;
+            height: 88px;
+            z-index: 4;
+            visibility: visible;
+        }
+
+        .carousel_cloud a.logo_5 {
+            left: 230px;
+            top: 82px;
+            width: 143px;
+            height: 95px;
+            z-index: 5;
+            visibility: visible;
+        }
+
+        .carousel_cloud a.logo_6 {
+            left: 400px;
+            top: 80px;
+            width: 153px;
+            height: 103px;
+            z-index: 6;
+            visibility: visible;
+        }
+
+        .carousel_cloud a.logo_7 {
+            left: 578px;
+            top: 82px;
+            width: 143px;
+            height: 95px;
+            z-index: 5;
+            visibility: visible;
+        }
+
+        .carousel_cloud a.logo_8 {
+            left: 744px;
+            top: 60px;
+            width: 135px;
+            height: 88px;
+            z-index: 4;
+            visibility: visible;
+        }
+
+        .carousel_cloud a.logo_9 {
+            left: 796px;
+            top: 40px;
+            width: 130px;
+            height: 85px;
+            z-index: 3;
+            visibility: visible;
+        }
+
+        .carousel_cloud a.logo_10 {
+            left: 818px;
+            top: 24px;
+            width: 130px;
+            height: 83px;
+            z-index: 2;
+            visibility: visible;
+        }
+
+        .carousel_cloud a.logo_11 {
+            left: 767px;
+            top: 12px;
+            width: 120px;
+            height: 80px;
+            z-index: 1;
+            visibility: visible;
+        }
+
+        .carousel_cloud a.logo_12 {
+            left: 712px;
+            top: 0px;
+            width: 120px;
+            height: 80px;
+            z-index: 0;
+            visibility: visible;
+        }
+
+    .carousel_cloud a {
+        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.otc.ru/files/images/carousel_cloud/box.png', sizingMethod='scale');
+        -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.otc.ru/files/images/carousel_cloud/box.png', sizingMethod='scale')";
+    }
+
+.logo_link {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 120px !important;
+    height: 80px !important;
+    z-index: 10 !important;
+    visibility: visible !important;
+    background: url(http://www.otc.ru/files/images/cloudcarusel/box.png) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: top;
+}
+
+    .logo_link img {
+        visibility: visible !important;
+    }

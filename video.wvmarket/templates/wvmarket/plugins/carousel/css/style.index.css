@@ -1,0 +1,151 @@
+/*carousel*/
+.carousel {
+    top: -15px;
+    position: relative;
+    color: #fff;
+    z-index: 10;
+}
+
+    .carousel .cell {
+        display: none;
+    }
+
+        .carousel .cell .text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+        }
+
+.carousel_content {
+    height: 537px;
+}
+
+.carousel_text {
+    width: 660px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 150px;
+    margin-left: -460px;
+    padding: 30px 80px;
+    background: url(../img/bg.png);
+    font: normal 14px PTSans;
+}
+
+    .carousel_text h2 {
+        font: normal 35px/35px Cuprum;
+    }
+
+.carousel_text h6 {
+        background: url(../img/videoaukcion.png ) no-repeat;
+        width: 150px;
+        height: 45px;
+        font: normal 20px/20px Cuprum;
+         position: absolute;
+         text-indent: 8px;
+        left: 10%;
+    bottom: -120px;
+    margin-left: -45px;
+    padding: 15px;
+    color: #ffffff;    
+    text-decoration: none;
+}
+
+.carousel .prev, .carousel .next {
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(../img/btns.png) 0 0 no-repeat;
+    width: 75px;
+    height: 73px;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+}
+
+.carousel .prev {
+    left: -35px;
+    background-position: 0 0;
+}
+
+.carousel .next {
+    right: -35px;
+    background-position: -75px 0;
+}
+
+.carousel .prev:hover {
+    background-position: 0 -73px;
+}
+
+.carousel .next:hover {
+    right: -35px;
+    background-position: -75px -73px;
+}
+
+.bg_carousel_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+    .box .box_border {
+        background: url(../img/left.png) 0 0 repeat-y;
+        padding: 0 0 0 3px;
+    }
+
+    .box .box_content {
+        background: #fff url(../img/right.png) 100% 0 repeat-y;
+        padding: 14px;
+    }
+
+        .box .box_content h2 {
+            color: #626262;
+        }
+/*   */
+
+.statistic_box {
+    margin-top: -180px;
+    position: relative;
+}
+
+.all_statistic {
+    top: 20px;
+    position: relative;
+}
+
+    .all_statistic a {
+        text-align: right;
+        padding-right: 17px;
+        background: url(../img/arrow.png) 100% 4px no-repeat;
+    }
+
+
+.left_contaner {
+    float: left;
+    width: 49%;
+    /* margin-left:5px;*/
+}
+
+.right_contaner {
+    float: left;
+    width: 49%;
+    margin-left: 2%;
+}
+
+.static_box {
+    position: relative;
+}
+
+.box_content h3 {
+    text-align: center;
+    color: #da1919;
+}
+

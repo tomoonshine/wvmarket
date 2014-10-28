@@ -1,0 +1,63 @@
+
+.statistic_box {
+	margin-top: 0px;
+}
+
+.carousel_content {
+	height:366px;
+}
+
+.carousel_text h2 {
+    font: normal 35px/40px Cuprum;
+}
+
+.carousel_text {
+	width:380px;
+	margin:0;
+	position: absolute;
+	left:50%;
+	bottom:auto;
+	top:75px;
+	margin-left:-600px;
+	padding:0;
+	background:none;
+	font:16px/normal Tahoma;
+	text-align:left;
+}
+
+.carousel_text p  { text-align:left; }
+.carousel_text h2 { margin-bottom:20px; }
+.carousel_text a  { color: #fff; text-decoration: none }
+.carousel_text a:hover  { color: #da1919; text-decoration:underline}
+.carousel .prev, .carousel .next { display:none; }
+
+.curtain_carousel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/curtain_carousel.png) 50% 0 no-repeat;	
+}
+
+.switch_carousel { 	
+    position: absolute;
+	left:50%;
+	top:370px;
+	width:585px;
+	text-align:right;
+	margin-left:0px;	
+ }
+
+.switch_carousel a { 	
+     display:inline-block;
+	 width:16px; 
+	 height:16px;
+     background:#d1d3d4;
+     margin-left:7px;	 
+ }
+ 
+.switch_carousel a:hover, .switch_carousel a.current { background:#eb1b35; } 
+.details_button a { padding:10px; background:#fff; font:normal 18px Cuprum, Tahoma; color: #3b3b3b; text-decoration:none; zoom:1  }
+.details_button a:hover { background:#da1919; border-bottom:1px solid #707070; padding-bottom:9px; color: #fff; }
+ 

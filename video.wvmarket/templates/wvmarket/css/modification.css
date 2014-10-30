@@ -124,7 +124,7 @@
 }
 
 .steps .middle .wrap .content .orange {
-  color: #f5841f;
+  color: #F24941;
 }
 
 #total {
@@ -794,4 +794,22 @@ width: 160px;
 }
 #formstep5 .payment input:checked + label{
 	color: rgb(182, 210, 51);
+}
+
+#waitContext {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 999999;
+	background-color: rgba(0,0,0,0.5);
+	background-image: url("../images/loading8.gif");
+	top:0;
+	left:0;
+}
+
+.errors {
+	background-color: rgba(242, 73, 73,0.5);
+	padding-left: 40px;
+	
+	
 }

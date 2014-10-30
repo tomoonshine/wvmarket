@@ -10,11 +10,6 @@
 	xmlns:umi="http://www.umi-cms.ru/TR/umi">
 
 	<xsl:template match="/result[@module = 'catalog' and @method = 'object'][parents/page/@id = '195']">
-
-
-	<script>
-		
-	</script>
 	<!-- ШАГ 1 -->
 	<div class="steps" id="step1">
         <div class="top"></div>
@@ -100,7 +95,8 @@
 					</div>
 					<br/>
 				  </div>
-                <div class="continue" onClick="step1()">&nbsp;Продолжить&nbsp;</div>
+					<div class="continue" onClick="step1()">&nbsp;Продолжить&nbsp;</div>
+<!-- 				<div class="continue" onClick="waitContext()">&nbsp;Продолжить&nbsp;</div> -->
             </div>
           </div>
         </div>
@@ -263,7 +259,7 @@
 					</div>
 
 					<div id="wardrobe">
-						Стиль
+						<h4>Стиль</h4>
 						<div class="field">
 							<input type="radio" value="Деловой" name="wardrobe" id="wardrobe_bf" checked="checked"/>
 							<label for="wardrobe_bf">&nbsp;Деловой</label>
@@ -315,10 +311,11 @@
 					  </div>
 						<form id = "formstep5" method="POST" action="/emarket/saveInfo">
 							<!-- <xsl:apply-templates select="document('udata://emarket/purchasing_one_step')/udata" mode="STEP5" /> -->
+							
 						</form>
 					<div class="back" onClick="backToStep('step4','step5')">&nbsp;Вернуться&nbsp;</div>
-					<div class="continue" onClick="step5()">&nbsp;Продолжить&nbsp;</div>
-				
+					<!-- <div class="continue" onClick="step5()">&nbsp;Продолжить&nbsp;</div> -->
+					
             </div>
           </div>
         </div>

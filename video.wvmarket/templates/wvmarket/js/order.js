@@ -1,6 +1,4 @@
-	
-	
-	
+
 	var costLength = 0;
 	var costScript = 0;
 	
@@ -33,7 +31,7 @@ function getElements(data) {
 			if (i == 0) htmlpart += ' checked="" ';
 			htmlpart += '/><label>&nbsp;' + r[i].getAttribute('name') + '</label></div>';
 		}
-		htmlpart += '</div>';
+		htmlpart += '</div><input type="submit" value="&continue;" class="continue" />';
 		
 		document.getElementById('formstep5').innerHTML = htmlpart;
 		
@@ -141,6 +139,7 @@ function getElements(data) {
 				changeScript(getCost('script'));
 			break;
 			case('step5'):
+					waitContext();
 					// отчистить корзину
 					clearBasket();
 					// положить в корзину консультанта
@@ -149,7 +148,12 @@ function getElements(data) {
 					putElement(orderLength);
 					// // положить в корзину сценарий ролика
 					putElement(orderText);
+					//запросить форму отправления заказа
 					purchasingGo();
+					// Записать параметры					
+					putParam();
+					
+					waitContext();
 			break;
 		}
 	}
@@ -236,7 +240,7 @@ function getElements(data) {
 
 	function step5() {
 
-		
+		waitContext();
 		 // // записать в заказ дополнительные параметры
 		putParam();
 		
@@ -255,7 +259,7 @@ function getElements(data) {
                 }
 		})
 		
-		
+		waitContext();
 	}
 	
 	function changePrice() {
@@ -293,4 +297,16 @@ function getElements(data) {
 	function changeScript(cost) {
 		costScript = cost;
 		changePrice();
+	}
+	
+	function waitContext() {
+		var newDiv = document.getElementById('waitContext');
+		if (newDiv) {
+			document.body.removeChild(newDiv);
+		} else {
+			newDiv = document.createElement('div');
+			newDiv.id = 'waitContext';
+			document.body.appendChild(newDiv);
+		}
+
 	}

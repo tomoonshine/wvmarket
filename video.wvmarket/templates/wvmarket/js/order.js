@@ -31,7 +31,7 @@ function getElements(data) {
 			if (i == 0) htmlpart += ' checked="" ';
 			htmlpart += '/><label>&nbsp;' + r[i].getAttribute('name') + '</label></div>';
 		}
-		htmlpart += '</div><input type="submit" value="&continue;" class="continue" />';
+		htmlpart += '</div><input type="submit" value="Продолжить" class="continue" />';
 		
 		document.getElementById('formstep5').innerHTML = htmlpart;
 		

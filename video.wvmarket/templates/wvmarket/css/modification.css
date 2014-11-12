@@ -246,7 +246,9 @@
 }
 
 .steps .middle .wrap .content input.continue {
-  background: -moz-linear-gradient(center bottom , #B6D334 0%, #D4FF00 100%) repeat scroll 0 0 padding-box rgba(0, 0, 0, 0);
+/*   background: -moz-linear-gradient(center bottom , #B6D334 0%, #D4FF00 100%) repeat scroll 0 0 padding-box rgba(0, 0, 0, 0); */
+  background: #fefcea; /* Для старых браузров */
+	background: linear-gradient(to top, #B6D334, #D4FF00);
   border: 0 none;
   cursor: pointer;
   height: 30px;
@@ -262,13 +264,17 @@
 
 
 .steps .middle .wrap .content input.continue:hover {
-	background: -moz-linear-gradient(center bottom , #EDFF96 0%, #D4FF00 100%) repeat scroll 0 0 padding-box rgba(0, 0, 0, 0);
+	/* background: -moz-linear-gradient(center bottom , #EDFF96 0%, #D4FF00 100%) repeat scroll 0 0 padding-box rgba(0, 0, 0, 0); */
+	  background: #B6D334; /* Для старых браузров */
+	background: linear-gradient(to top, #B6D334, #D4FF00);
 }
 
 /* Кнопка вернуться */
 .steps .middle .wrap .content .back {
 	text-align: center;
-  background: -moz-linear-gradient(center bottom , #B6D334 0%, #D4FF00 100%) repeat scroll 0 0 padding-box rgba(0, 0, 0, 0);
+  /* background: -moz-linear-gradient(center bottom , #B6D334 0%, #D4FF00 100%) repeat scroll 0 0 padding-box rgba(0, 0, 0, 0); */
+	background: #B6D334; /* Для старых браузров */
+	background: linear-gradient(to top, #B6D334, #D4FF00);  
   border: 0 none;
   cursor: pointer;
   height: 30px;
@@ -292,13 +298,18 @@
 }
 
 .steps .middle .wrap .content .back:hover {
-	background: -moz-linear-gradient(center bottom , #EDFF96 0%, #D4FF00 100%) repeat scroll 0 0 padding-box rgba(0, 0, 0, 0);
+/* 	background: -moz-linear-gradient(center bottom , #EDFF96 0%, #D4FF00 100%) repeat scroll 0 0 padding-box rgba(0, 0, 0, 0); */
+	background: #EDFF96; /* Для старых браузров */
+	background: linear-gradient(to top, #EDFF96, #D4FF00);  
+	
 }
 
 /* кнопка продолжить */
 .steps .middle .wrap .content div.continue {
 	text-align: center;
-  background: -moz-linear-gradient(center bottom , #B6D334 0%, #D4FF00 100%) repeat scroll 0 0 padding-box rgba(0, 0, 0, 0);
+  /* background: -moz-linear-gradient(center bottom , #B6D334 0%, #D4FF00 100%) repeat scroll 0 0 padding-box rgba(0, 0, 0, 0); */
+	background: #EDFF96; /* Для старых браузров */
+	background: linear-gradient(to top, #B6D334, #D4FF00);   
   border: 0 none;
   cursor: pointer;
   height: 30px;
@@ -322,7 +333,9 @@
 }
 
 .steps .middle .wrap .content div.continue:hover {
-	background: -moz-linear-gradient(center bottom , #EDFF96 0%, #D4FF00 100%) repeat scroll 0 0 padding-box rgba(0, 0, 0, 0);
+	/* background: -moz-linear-gradient(center bottom , #EDFF96 0%, #D4FF00 100%) repeat scroll 0 0 padding-box rgba(0, 0, 0, 0); */
+		background: #EDFF96; /* Для старых браузров */
+	background: linear-gradient(to top, #EDFF96, #D4FF00); 
 }
 
 #img1 {

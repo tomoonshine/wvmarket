@@ -229,7 +229,7 @@
 						
 						<div id="own" >
 							<p>
-								<span id="your_script">Ваш текст</span>
+								<span id="your_script"><h4>Ваш текст</h4></span>
 								<span id="word_count" style="color: rgb(255, 255, 255);"></span>
 								<textarea name="script_content" id="script_content"></textarea>
 							</p>
@@ -322,30 +322,12 @@
     </div>
 	
 
-	
-<!-- 	  <div class="step" id="step1">
-			<br/>
-			шаг 1 стоимость:
-			<br/>
-			<h4>Консультант</h4>
-			<img>
-			<xsl:attribute name="src">
-				<xsl:value-of select="//property[@name='novoe_pole']/value" />
-			</xsl:attribute>
-			</img>
-			<div class="order_consultant">
-				<div class="button big" onClick="nextStep('step1','step2')">Продолжить</div>
-			</div>
-
-		</div> -->
-
 			
 		<script type="text/javascript">
 			init(<xsl:value-of select="$document-page-id" />);
 		</script>	
-		
-		<!-- <xsl:apply-templates select="document('udata://catalog/getObjectsList/notemplate/231/10/0')" mode="consultant" />  -->
-	</xsl:template>
+	
+</xsl:template>
 	
 
 <!-- Оформление шага 5 -->
@@ -378,80 +360,6 @@
 	</xsl:template>
 	
 	
-<!-- 	<xsl:template match="group" mode="form" mode="STEP5">
-		<h4>
-			<xsl:value-of select="@title" />
-		</h4>
-		<xsl:apply-templates select="field" mode="form" mode="STEP5"/>
-	</xsl:template>
-
-
-	<xsl:template match="field" mode="form" mode="STEP5">
-		<div>
-			<label title="{@tip}">
-				<xsl:apply-templates select="@required" mode="form" mode="STEP5"/>
-				<span>
-					<xsl:value-of select="concat(@title, ':')" />
-				</span>
-				<input type="text" name="{@input_name}" value="{.}" class="textinputs" />
-			</label>
-		</div>
-	</xsl:template> -->
-	
-	
-	
-	
-	
-	
-
-<!-- Шаг 2 -->
-	<xsl:template match="udata[@module = 'catalog' and @method = 'getObjectsList']" mode="consultant" >
-<!-- 		<div class="step" id="step2">
-			<br/>
-			шаг 2 стоимость:
-			<br/>
-			<h4>Выберите время ролика</h4>
-	
-				<xsl:apply-templates select="lines/item" mode="consultant" />
-	
-			<div>
-				<div class="order_consultant">
-					<div class="button big" onClick="nextStep('step2','step1')">Вернуться</div>				
-					<div class="button big" onClick="lastStep({$document-page-id});nextStep('step2','step3')">Продолжить</div>
-				</div>
-			</div>
-		</div>
-		
-		<form method="POST" action="/emarket/saveOrder_mod" class="without-steps">
-			<div class="step" id="step3">
-				<br/>
-				шаг 3 стоимость:
-				<br/>
-				<h4>Задайте текст видео</h4>
-				<textarea name="text" rows="10" cols="45"></textarea>
-				<div class="order_consultant">
-					<div class="button big" onClick="nextStep('step3','step2')">Вернуться</div>
-					<div class="button big" onClick="nextStep('step3','step4')">Продолжить</div>				
-				</div>
-			</div>
-			
-			<div class="step" id="step4">
-				<br/>
-				шаг 4 стоимость:
-				<br/>
-				
-					<div class="payment onestep" style="" id="playment">
-					</div>
-					<div class="order_consultant">
-						<div class="button big" onClick="nextStep('step3','step2')">Вернуться</div>				
-						<input type="submit" class="button big" value="Продолжить"/>	
-					</div>
-				<div id="playment">
-				</div>
-			</div>
-		</form> -->
-		
-	</xsl:template>
 	
 	<xsl:template match="item" mode="consultant" >
 		<input type="radio" name="time" value="{@id}">

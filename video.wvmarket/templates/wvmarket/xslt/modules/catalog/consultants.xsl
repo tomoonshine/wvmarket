@@ -52,9 +52,9 @@
 				</xsl:attribute>
 					<div class="button_mod_blue">Посмотреть</div>
 				</a>
-<!-- 				<a href="{@link}">
+				<a href="{@link}">
 					<div class="button_mod_red">Заказать</div>
-				</a> -->
+				</a>
 				<div id="ispeak{position()}" class="video" ></div>
 			</div>
 

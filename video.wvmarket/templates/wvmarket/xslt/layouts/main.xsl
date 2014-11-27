@@ -502,7 +502,7 @@
 					</a>
 				</figure>
 
-				<xsl:value-of select="//property[@name='pole_1_tekst']/value" disable-output-escaping="yes" />
+				<strong><xsl:value-of select="//property[@name='kratkoe_opisanie_1']/value" disable-output-escaping="yes" /></strong>
 			</li>
 			<!-- Модальное окно -->
 			<div id="popup_name2" class="popup_block block2">
@@ -522,7 +522,7 @@
 						</img>
 					</a>
 				</figure>
-				<xsl:value-of select="//property[@name='pole_2_tekst']/value" disable-output-escaping="yes" />
+				<strong><xsl:value-of select="//property[@name='kratkoe_opisanie_2']/value" disable-output-escaping="yes" /></strong>
 			</li>
 						<!-- Модальное окно -->
 			<div id="popup_name3" class="popup_block block2">
@@ -543,7 +543,7 @@
 						</img>
 					</a>
 				</figure>
-				<xsl:value-of select="//property[@name='pole_3_tekst']/value" disable-output-escaping="yes" />
+				<strong><xsl:value-of select="//property[@name='kratkoe_opisanie_3']/value" disable-output-escaping="yes" /></strong>
 			</li>
 			<!-- Модальное окно -->
 			<div id="popup_name4" class="popup_block block2">
@@ -673,11 +673,11 @@
 				
 		var ADVVideoArray2 =  [
 			{	Anchor: 'ADVSpeaker',
-				offsetX: '450',
+				offsetX: '300',
 				offsetY: ' 800',
 				file: '/files/speakers/main_video1/main2_450.flv',
 				pleer: '/files/speakers/main_video1/ADVplayer.swf',
-				width: '450',
+				width: '650',
 				height: '450',
 				click: false,
 				onClick: '',
@@ -694,11 +694,11 @@
 	var VideoDemo =  [
 			{	Anchor: 'begin_1',
 				offsetX: '150',
-				offsetY: '-274',
+				offsetY: '-198',
 				file: '/files/speakers/demo_350x350.flv',
 				pleer: '/files/speakers/main_video1/ADVplayer.swf',
-				width: '350',
-				height: '250',
+				width: '250',
+				height: '150',
 				click: false,
 				onClick: "ADVStartVideo(ADVVideoArray2);",
 				divStyle: 'position:absolute;z-index:999;width:450px;height:300px;cursor:pointer;',
@@ -738,36 +738,32 @@ $(function() {
 
 	
 	<!-- Yandex.Metrika counter -->
-<script>
-var yaParams = {/*Здесь параметры визита*/};
-</script>
+	<script type="text/javascript">
+	(function (d, w, c) {
+		(w[c] = w[c] || []).push(function() {
+			try {
+				w.yaCounter26817468 = new Ya.Metrika({id:26817468,
+						webvisor:true,
+						clickmap:true,
+						trackLinks:true,
+						accurateTrackBounce:true,
+						trackHash:true});
+			} catch(e) { }
+		});
 
-<script>
-(function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter16116613 = new Ya.Metrika({id:16116613,
-                    webvisor:true,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    trackHash:true,params:window.yaParams||{ }});
-        } catch(e) { }
-    });
+		var n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function () { n.parentNode.insertBefore(s, n); };
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
 
-    var n = d.getElementsByTagName(&quot;script&quot;)[0],
-        s = d.createElement(&quot;script&quot;),
-        f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = &quot;text/javascript&quot;;
-    s.async = true;
-    s.src = (d.location.protocol == &quot;https:&quot; ? &quot;https:&quot; : &quot;http:&quot;) + &quot;//mc.yandex.ru/metrika/watch.js&quot;;
-
-    if (w.opera == &quot;[object Opera]&quot;) {
-        d.addEventListener(&quot;DOMContentLoaded&quot;, f, false);
-    } else { f(); }
-})(document, window, &quot;yandex_metrika_callbacks&quot;);
-</script>
-<!-- /Yandex.Metrika counter -->
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<!-- /Yandex.Metrika counter -->
 
 </body>
 </html>
